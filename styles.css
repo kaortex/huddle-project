@@ -18,6 +18,10 @@ a {
   color: white;
 }
 
+p {
+  margin: 0;
+}
+
 .huddle-logo-top {
   position: absolute;
   width: 13%;
@@ -36,12 +40,13 @@ a {
   position: relative;
   text-align: left;
   background-image: url(images/bg-hero-desktop.svg);
+  background-size: cover;
   padding: 200px 60px 170px;
 }
 
 .middle-container {
   background-color: white;
-  padding: 50px;
+  padding: 50px 50px 0;
 }
 
 .grow-together {
@@ -96,9 +101,10 @@ a {
 }
 
 .block {
-  position: absolute;
-  background-color: red;
-  left: 35%;
+  background-color: white;
+  box-shadow: 0 0 10px 1.5px lightgrey;
+  border-radius: 0.75rem;
+  margin: 50px 15px 25px 15px;
 }
 
 .bottom-container {
@@ -109,11 +115,25 @@ a {
 }
 
 .huddle-logo-bot {
+  filter: invert(1) saturate(0) brightness(2) contrast(1);
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
   color: white;
+  margin: 0;
 }
 
 .attribution {
-  color: black;
+margin: 0;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  color: red;
 }
 
 .try-it-free {
@@ -124,9 +144,9 @@ a {
   -webkit-border-radius: 30;
   -moz-border-radius: 30;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 0px 7px hsl(208, 11%, 55%);
-  -moz-box-shadow: 0px 0px 7px hsl(208, 11%, 55%);
-  box-shadow: 0px 0px 7px hsl(208, 11%, 55%);
+  -webkit-box-shadow: 0 0 7px hsl(208, 11%, 55%);
+  -moz-box-shadow: 0 0 7px hsl(208, 11%, 55%);
+  box-shadow: 0 0 7px hsl(208, 11%, 55%);
   color: black;
   background: white;
   padding: 15px 60px 15px 60px;
